@@ -5,8 +5,11 @@
 The project aims to implement, profile speculative decoding and study how kv cache and selection of draft model impact its performance.
 ## Outline
 autoregressive_sampling.py: implemented autoregressive sampling as baseline
+
 kv_cache.py: implemented kv cache optimization
+
 speculative_sampling: implemented speculative decoding. you can revise the model selection and prompt in this file.
+
 demo.py: defined main function. you can run this demo to observe the result of speculative decoding
 
 ## Commands to run
