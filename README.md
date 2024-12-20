@@ -2,7 +2,7 @@
 
 ## Description
 
-The project aims to implement, profile speculative decoding and study how kv cache and selection of draft impact its performance.
+The project aims to implement, profile speculative decoding and study how kv cache and selection of draft model impact its performance.
 ## Outline
 
 
