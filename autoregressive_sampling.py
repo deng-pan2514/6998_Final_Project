@@ -1,7 +1,7 @@
 import torch
 
 from tqdm import tqdm
-from sampling.utils import norm_logits, sample
+from utils import norm_logits, sample
 
 @torch.no_grad()
 def autoregressive_sampling(x : torch.Tensor, model : torch.nn.Module, N : int, 
