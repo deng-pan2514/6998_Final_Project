@@ -2,9 +2,9 @@ import torch
 from tqdm import tqdm
 import torch
 
-from kvcache_model import KVCacheModel
+from kv_cache import KVCacheModel
 from utils import norm_logits, sample, max_fn
-from globals import Decoder
+from decoder import Decoder
 
 @torch.no_grad()
 def speculative_sampling(input_seq: torch.Tensor, small_model: torch.nn.Module, large_model: torch.nn.Module,
