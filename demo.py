@@ -6,7 +6,7 @@ from colorama import Fore, Style
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 import autoregressive_sampling, speculative_sampling
-from globals import Decoder
+from decoder import Decoder
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='args for main.py')
