@@ -11,4 +11,3 @@ The project aims to implement, profile speculative decoding and study how kv cac
 
 ## Results
 
-![Uploading Screen Shot 2024-12-20 at 4.47.30 PM.jpg…]()
