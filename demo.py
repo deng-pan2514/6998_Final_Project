@@ -5,7 +5,8 @@ import contexttimer
 from colorama import Fore, Style
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-import autoregressive_sampling, speculative_sampling
+from autoregressive_sampling import autoregressive_sampling
+from speculative_sampling import speculative_sampling
 from decoder import Decoder
 
 def parse_arguments():
@@ -16,8 +17,8 @@ def parse_arguments():
     parser.add_argument('--target_model_name', type=str, default="bigscience/bloomz-7b1")
     parser.add_argument('--verbose', '-v', action='store_true', default=False, help='enable verbose mode')
     parser.add_argument('--seed', '-s', type=int, default=None, help='set a random seed, which can makes the result reproducible')
-    parser.add_argument('--benchmark', '-b', action='store_true', default=False, help='show benchmark results.')
-    parser.add_argument('--profiling', '-p', action='store_true', default=False, help='collect torch profiler results.')
+    parser.add_argument('--benchmark', '-b', action='store_true', default=True, help='show benchmark results.')
+    parser.add_argument('--profiling', '-p', action='store_true', default=True, help='collect torch profiler results.')
     parser.add_argument('--max_tokens', '-M', type=int, default=20, help='max token number generated.')
     parser.add_argument('--gamma', '-g', type=int, default=4, help='guess time.')
     args = parser.parse_args()
